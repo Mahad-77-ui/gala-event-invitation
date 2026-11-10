@@ -1,0 +1,56 @@
+/* Name: Student Name, Roll No: i251234, Section: E */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+    color: #1e3a8a;
+}
+
+h1 {
+    color: #1e3a8a;
+}
+
+img {
+    border: 2px solid #1e3a8a;
+    border-radius: 4px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #1e3a8a;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #1e3a8a;
+    color: #ffffff;
+}
+
+td {
+    background-color: #ffffff;
+    color: #1e3a8a;
+}
+
+button {
+    background-color: #d4af37;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b89628;
+}
