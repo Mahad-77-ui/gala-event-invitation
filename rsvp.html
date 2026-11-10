@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RSVP - Grand Gala 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>RSVP for Grand Gala 2026</h1>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="schedule.html">Schedule</a> | 
+            <a href="rsvp.html">RSVP</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Confirm Your Attendance</h2>
+        <form id="rsvpForm" onsubmit="submitRSVP(event)">
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="attendance">Will you attend?</label><br>
+            <select id="attendance" name="attendance">
+                <option value="Yes">Yes, I will be there</option>
+                <option value="No">No, I cannot attend</option>
+            </select><br><br>
+
+            <button type="submit">Submit RSVP</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Grand Gala Event Invitation | Student Lab 12</p>
+    </footer>
+
+    <script>
+        function submitRSVP(event) {
+            event.preventDefault();
+            var name = document.getElementById("fullname").value;
+            console.log("RSVP Submitted for: " + name);
+            alert("Thank you, " + name + "! Your RSVP has been received.");
+        }
+    </script>
+</body>
+</html>
